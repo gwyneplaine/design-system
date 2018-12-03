@@ -1,0 +1,11 @@
+{
+  "name": "textarea",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "emotion": "^10.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
