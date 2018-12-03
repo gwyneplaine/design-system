@@ -1,0 +1,25 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/unstyled-components/design-system.git",
+  "author": "Charles Lee <clee@atlassian.com>",
+  "license": "MIT",
+  "bolt": {
+    "workspaces": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "playroom:start": "playroom start",
+    "playroom:build": "playroom build"
+  },
+  "devDependencies": {
+    "playroom": "^0.5.1"
+  },
+  "dependencies": {
+    "emotion": "^10.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
