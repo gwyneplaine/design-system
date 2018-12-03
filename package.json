@@ -15,10 +15,19 @@
     "playroom:build": "playroom build"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "babel-loader": "^8.0.4",
     "playroom": "^0.5.1"
   },
   "dependencies": {
-    "emotion": "^10.0.1",
+    "@emotion/cache": "^10.0.0",
+    "@emotion/core": "^10.0.1",
+    "@emotion/weak-memoize": "^0.2.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }
