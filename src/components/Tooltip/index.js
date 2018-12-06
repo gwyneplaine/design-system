@@ -82,7 +82,7 @@ const defaultStyles = {
 }
 
 const TooltipContainer = forwardRef(({ children, getStyles, truncate, positioningStyles, ...props }, ref) => (
-  <div ref={ref} css={getStyles('container', { truncate, positioningStyles })} {...props}>
+  <div ref={ref} css={getStyles('container', { truncate })} {...props}>
     { children }
   </div>
 ))
@@ -127,9 +127,7 @@ const hideTooltip = (fn: boolean => void, defaultDelay: number) => {
 
 export default class Tooltip extends Component {
   static defaultProps = {
-    components: {
-      Container: TooltipContainer,
-    },
+    container: TooltipContainer,
     tag: 'div',
     styles: {},
     hideTooltipOnClick: false,
@@ -220,7 +218,6 @@ export default class Tooltip extends Component {
 
   render () {
     const {
-      children,
       content,
       position,
       mousePosition,
@@ -271,9 +268,10 @@ export default class Tooltip extends Component {
                     <div ref={ref} css={{
                       ...getAnimationStyles(placement),
                       ...style,
-                      border: '1px solid red',
                     }}>
+                      <TooltipContainer truncate={truncate} getStyles={this.getStyles}>
                         {content}
+                      </TooltipContainer>
                     </div>
                   </Portal>
                 )}
