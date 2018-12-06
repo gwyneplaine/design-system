@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@atlaskit/popper": "^0.3.5",
+    "@atlaskit/portal": "^0.0.16",
+    "@emotion/core": "^10.0.4",
+    "flushable": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "react-transition-group": "^2.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
